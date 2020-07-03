@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import "nav.css";
+@import "footer.css";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+   
+} 
+
+
+
+.banner {
+    
+    background: url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80") center;
+    background-size: cover;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+  }
+
+
+
+  .posts {
+    padding: 2rem;
+  }
+  
+  .posts > ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .posts > ul > li {
+    border: 1px solid #e2e2e2;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .posts > ul > li > figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    position: relative;
+  }
+  
+  .posts > ul > li > figure > img {
+    width: 100%;
+  }
+  
+  .posts > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+  }
+  
+  .posts > ul > li > figure > figcaption > h3 {
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+  }
+  
+  .posts > ul > li > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0.75rem;
+    color: #666666;
+    margin-bottom: 2.5rem;
+  }
+  
+  .posts > ul > li > a {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* Styles for the post */
+  .post-title {
+    /* Photo by Philippe Toupet on Unsplash */
+    background: url("https://images.unsplash.com/photo-1500993855538-c6a99f437aa7") center;
+    background-size: cover;
+    padding: 4rem 2rem;
+  }
+  
+  .post-title > * {
+    color: #e2e2e2;
+  }
+  
+  .post-title > h1 {
+    font-size: 3rem;
+  }
+  
+  .content,
+  .side {
+    padding: 2rem;
+  }
+  
+  .content > * {
+    line-height: 1.5rem;
+  }
+  
+  .content > h2,
+  .content > p,
+  .content > blockquote {
+    margin-bottom: 1rem;
+  }
+  
+  .content > blockquote {
+    border-left: 3px solid #666;
+    padding: 0.625rem;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  
+  .content img {
+    width: 100%;
+    border-radius: 0.625rem;
+  }
+  
+  .content figure {
+    position: relative;
+  }
+  
+  .content figcaption {
+    position: absolute;
+    bottom: 1rem;
+    color: #e2e2e2;
+    background-color: #333;
+    padding: 0.25rem 1rem;
+  }
+  
+  /* Styles for the side bar */
+  .side img.avatar {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .bio > h2 {
+    font-size: 2rem;
+    padding-bottom: 0.625rem;
+  }
+  
+  .bio > p {
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+  }
+  
+  .social-group .fab {
+    font-size: 2rem;
+    color: #333;
+    transform: color 0.3s;
+  }
+  
+  .social-group .fab:hover {
+    color: #ff6347;
+  }
+  
+  .social-group > a {
+    text-decoration: none;
+  }
+  
+  .bio > p:nth-child(4) {
+    margin-bottom: 0.75rem;
+  }
+  
+  
+  .post {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .content {
+    flex: 70%;
+  }
+  
+  .side {
+    flex: 30%;
+    border-top: 0;
+    border-left: 1px solid #bbb;
+  }
+  
+ 
+  @media only screen and (max-width: 900px) {
+    .content,
+    .side {
+      flex: 100%;
+      border-left: 0;
+      border-top: 1px solid #bbb;
+    }
+  
+    .side {
+      display: flex;
+    }
+  
+    .side img.avatar {
+      width: 100px;
+      height: 100px;
+      margin-right: 1rem;
+    }
+  
+    .bio > h2 {
+      font-size: 1.5rem;
+    }
+  
+    .bio > p {
+      font-size: 1rem;
+    }
+  }
