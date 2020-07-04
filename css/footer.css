@@ -1,9 +1,16 @@
 footer {
-    background-color: rgb(140, 172, 160);
-    padding: 0.80rem;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-    width: 100%;
-    
+  grid-area: ft;
+  height: 40px;
+  background-color: rgb(140, 172, 160);
+  color: #fffaf0;
+  padding: 10px;
+  text-align: center;
+}
+
+.fab{
+  padding: 5px;
+  color: #fffaf0
+}
+.fab:hover{
+	color: #0c95b8;
 }
